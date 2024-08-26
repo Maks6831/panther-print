@@ -358,7 +358,19 @@ export const DesignConfigurator = ({
                     100
                 )}
               </p>
-              <Button onClick={saveConfiguration} size="sm" className="w-full">
+              <Button
+                onClick={() => {
+                  saveConfig({
+                    configId,
+                    color: options.color.value,
+                    finish: options.finish.value,
+                    material: options.material.value,
+                    model: options.model.value,
+                  });
+                }}
+                size="sm"
+                className="w-full"
+              >
                 Continue
                 <ArrowRight className="h-4 w-4 ml-1.5 inline" />
               </Button>
