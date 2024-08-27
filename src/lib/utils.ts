@@ -16,9 +16,9 @@ export const formatPrice = (price: number) => {
 }
 
 export function constructMetadata({
-  title = 'PantherPrint- custom high-quality phone cases',
+  title = 'PantherPrint - custom high-quality phone cases',
   description = 'Create custom high-quality phone cases in seconds',
-  image = '/thumbnail.png',
+  image = '/panther-logo-1.png',
   icons = '/favicon.ico',
 }: {
   title?: string
@@ -39,7 +39,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: '@joshtriedcoding',
+      creator: '',
     },
     icons,
     metadataBase: new URL("https://pantherprint.netlify.app/")
